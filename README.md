@@ -1,16 +1,18 @@
-# Lenskart Clone
+# Lenskart Clone :smile:
 
 This is a lenskart website clone made using HTML, CSS and JS.
 
+<br>
 
-**Team Members**
+**Team Members** :v:
 - [Soumyashree](https://github.com/SoumyashreeBehera)
 - [Anuj](https://github.com/anujsharma1996)
 - [Tausif](https://github.com/MdTausifM)
 
+<br>
 
 
-**Webpages**
+**Webpages** 💂‍♂️
 1) Homepage
 2) Products Page
 3) Single Product Page
@@ -18,9 +20,9 @@ This is a lenskart website clone made using HTML, CSS and JS.
 5) Payments Page
 6) Thank you Page
 
+<br>
 
-
-**Functionality**
+**Functionality** 🔥
 1) Hovering pop ups
 2) Modal window sign-up/sign-in
 3) Dynamic products page
@@ -29,12 +31,12 @@ This is a lenskart website clone made using HTML, CSS and JS.
 6) Promises for payment
 7) Local Storage of products data
 
+<br>
 
-**Steps to run website locally**
+**Steps to run Website Locally** ☀️
 1) Open GitBash in the location you want to clone
-2) Type the command "git clone https://github.com/sushanthps2/Lenskart-Clone.git"
-3) Open 'Homepage.html' after cloning is done.
-
+2) Copy-Paste the command "git clone https://github.com/sushanthps2/Lenskart-Clone.git" on the terminal
+3) Open 'Homepage.html' after cloning is done
 
 
 
