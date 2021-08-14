@@ -22,3 +22,12 @@ This is a lenskart website clone made using HTML, CSS and JS.
 5) Sign-in/Sign-up functionality
 6) Promises for payment
 7) Local Storage of products data
+
+
+
+**Team Members**
+- [Soumyashree](https://github.com/SoumyashreeBehera)
+- [Anuj](https://github.com/anujsharma1996)
+- [Tausif](https://github.com/MdTausifM)
+
+
