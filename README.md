@@ -40,7 +40,8 @@ This is a lenskart website clone made using HTML, CSS and JS.
 
 <br>
 
-**Images of Website** 😸
+**Images of Website** 🥰
+
 ![Lenskart1](https://user-images.githubusercontent.com/35593841/129454824-fb2e0fde-5e59-497f-bacb-d1203499a38f.png)
 ![Lenskar2](https://user-images.githubusercontent.com/35593841/129454835-2ac1b633-e22c-4e53-a1ef-85cbf7a273b6.png)
 ![Lenskart3](https://user-images.githubusercontent.com/35593841/129454837-62c670a1-e8af-455f-a3a4-77bbf7efdf3b.png)
