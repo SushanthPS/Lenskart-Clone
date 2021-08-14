@@ -3,6 +3,12 @@
 This is a lenskart website clone made using HTML, CSS and JS.
 
 
+**Team Members**
+- [Soumyashree](https://github.com/SoumyashreeBehera)
+- [Anuj](https://github.com/anujsharma1996)
+- [Tausif](https://github.com/MdTausifM)
+
+
 
 **Webpages**
 1) Homepage
@@ -24,10 +30,13 @@ This is a lenskart website clone made using HTML, CSS and JS.
 7) Local Storage of products data
 
 
+**Steps to run website locally**
+1) Open GitBash in the location you want to clone
+2) Type the command "git clone https://github.com/sushanthps2/Lenskart-Clone.git"
+3) Open 'Homepage.html' after cloning is done.
 
-**Team Members**
-- [Soumyashree](https://github.com/SoumyashreeBehera)
-- [Anuj](https://github.com/anujsharma1996)
-- [Tausif](https://github.com/MdTausifM)
+
+
+
 
 
