@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Product Page</title>
+  <link rel="icon" href="https://cdn6.aptoide.com/imgs/0/1/9/0194595bbda43fce1b79ddcd7c7ca0f7_icon.png"
+    type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="./styles/ionicons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/onepage.css" />
+  <link rel="stylesheet" href="./styles/products-navbar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="nav-bar-middle">
+    <div>
+      <img class="cursor-pointer" onclick="window.location.href = 'homepage.html'"
+        src="https://static1.lenskart.com/media/desktop/img/lk-logo-f.png" alt="" />
+    </div>
+    <div>
+      <div id="search-box">
+        <input type="text" placeholder="What are you looking for ?" />
+        <i class="material-icons">search</i>
+      </div>
+    </div>
+    <div id="nav-bar-middle-right-box">
+      <div class="cursor-pointer" id="user-name">
+        <div onclick="signin()">Sign In &</div>
+        <div onclick="signup()">Sign Up</div>
+      </div>
+      <div class="cursor-pointer">Track Order</div>
+      <div class="cursor-pointer">
+        <i style="color: #df5958" class="material-icons">favorite_border</i>
+        <div>Shortlist</div>
+      </div>
+      <div class="cursor-pointer">
+        <i class="material-icons">shopping_cart</i>
+        <div>Cart</div>
+      </div>
+    </div>
+  </div>
+  <div id="nav-bar">
+    <div id="left-text">
+      <div id="eyeglasses" onclick="location.href='products.html'">Eyeglasses</div>
+      <div id="computer-glasses" onclick="location.href='products.html'">Computer Glasses</div>
+      <div id="kids-glasses" onclick="location.href='products.html'">Kids Glasses</div>
+      <div id="contact-lenses" onclick="location.href='products.html'">Contact Lenses</div>
+      <div id="sunglasses" onclick="location.href='products.html'">Sunglasses</div>
+      <div id="home-eye-test">Home Eye-Test with Trial</div>
+      <div id="store-locator">Store Locator</div>
+    </div>
+    <div class="space"></div>
+    <div id="right-images">
+      <img src="https://static.lenskart.com/media/desktop/img/menu/icon_try_on.svg" alt="" />
+      <img src="https://static.lenskart.com/media/desktop/img/menu/blu-icon.svg" alt="" />
+      <img src="https://static.lenskart.com/media/desktop/img/menu/gold-icon.svg" alt="" />
+    </div>
+  </div>
+
+  <!-- =============================================================================================== -->
+  <!-- dropdown navbars -->
+
+  <div id="drop-down">
+    <div id="drop-down-gender">
+      <div class="nav-head cursor-pointer" id="gender-title">
+        SELECT GENDER
+      </div>
+      <div class="cursor-pointer nav-hover" id="drop-down-men">
+        <div>MEN</div>
+        <img alt="men" title="men" src="https://static.lenskart.com/media/desktop/img/ic_men.svg" width="35"
+          height="35" />
+        <i class="material-icons">navigate_next</i>
+      </div>
+      <div class="cursor-pointer nav-hover" id="drop-down-women">
+        <div>WOMEN</div>
+        <img alt="women" title="women" src="https://static.lenskart.com/media/desktop/img/ic_women.svg" width="35"
+          height="35" />
+        <i class="material-icons">navigate_next</i>
+      </div>
+      <div class="cursor-pointer nav-hover" id="drop-down-kids">
+        <div>KIDS</div>
+        <img alt="kids" title="kids" src="https://static.lenskart.com/media/desktop/img/ic_kids.svg" width="35"
+          height="35" />
+        <i class="material-icons">navigate_next</i>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div id="drop-down-category">
+      <div id="select-category">SELECT CATEGORY</div>
+      <div class="nav-hover cursor-pointer" id="select-category1">
+        <div onclick="location.href='products.html'">
+          <div class="fs15">CLASSIC EYEGLASSES</div>
+          <div class="fs12">STARTING FROM RS 999</div>
+        </div>
+        <i class="material-icons">navigate_next</i>
+      </div>
+      <div class="nav-hover cursor-pointer" id="select-category2">
+        <div onclick="location.href='products.html'">
+          <div class="fs15">PREMIUM EYEGLASSES</div>
+          <div class="fs12">STARTING FROM RS 3000</div>
+        </div>
+        <i class="material-icons">navigate_next</i>
+      </div>
+      <div class="nav-hover cursor-pointer" id="select-category3">
+        <div onclick="location.href='products.html'">
+          <div class="fs15">COMPUTER EYEGLASSES</div>
+          <div class="fs12">STARTING FROM RS 999</div>
+        </div>
+        <i class="material-icons">navigate_next</i>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div id="drop-down-picks">
+      <div id="top-picks">
+        <div class="nav-title">OUR TOP PICKS</div>
+        <div onclick="location.href='products.html'">
+          <div>New Arrivals</div>
+          <div>Best Seller</div>
+          <div>Lenskart BLU lenses</div>
+          <div>Trending</div>
+          <div>Tinted Eyeglasses</div>
+          <div>Computer Eyeglasses</div>
+        </div>
+      </div>
+      <div id="frame-type">
+        <div class="nav-title">FRAME TYPE</div>
+        <div onclick="location.href='products.html'">
+          <div>Rectangle Frames</div>
+          <div>Wayfarer Frames</div>
+          <div>Round Frames</div>
+          <div>Aviator Frames</div>
+          <div>Cat-Eye Frames</div>
+          <div>Rimless Frames</div>
+          <div>Half Rim Frames</div>
+        </div>
+      </div>
+      <div id="collection">
+        <div class="nav-title">COLLECTION</div>
+        <div onclick="location.href='products.html'">
+          <div>Air Flex Collection</div>
+          <div>Classic Acetate Collection</div>
+          <div>Air Signia Collection</div>
+          <div>Sleek Steel Collection</div>
+          <div>Air Silicon Collection</div>
+          <div>Blend Edit Collection</div>
+          <div>Air Clip On Collection</div>
+          <div>HD Acetate Collection</div>
+        </div>
+      </div>
+      <div id="brands">
+        <div class="nav-title">BRANDS</div>
+        <div onclick="location.href='products.html'">
+          <div>Vincent Chase</div>
+          <div>John Jacobs</div>
+          <div>Ray-Ban</div>
+          <div>Carrera</div>
+          <div>Oakley</div>
+          <div>Vogue</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////////////////////////////////////////////// -->
+  <div id="drop-down2">
+    <div id="drop-down-gender">
+      <div class="nav-head cursor-pointer" id="gender-title">
+        SELECT GENDER
+      </div>
+      <div class="cursor-pointer nav-hover" id="drop-down-men">
+        <div>MEN</div>
+        <img alt="men" title="men" src="https://static.lenskart.com/media/desktop/img/ic_men.svg" width="35"
+          height="35" />
+        <i class="material-icons">navigate_next</i>
+      </div>
+      <div class="cursor-pointer nav-hover" id="drop-down-women">
+        <div>WOMEN</div>
+        <img alt="women" title="women" src="https://static.lenskart.com/media/desktop/img/ic_women.svg" width="35"
+          height="35" />
+        <i class="material-icons">navigate_next</i>
+      </div>
+      <div class="cursor-pointer nav-hover" id="drop-down-kids">
+        <div>KIDS</div>
+        <img alt="kids" title="kids" src="https://static.lenskart.com/media/desktop/img/ic_kids.svg" width="35"
+          height="35" />
+        <i class="material-icons">navigate_next</i>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div id="drop-down-category2">
+      <div id="select-category">SELECT CATEGORY</div>
+      <div class="nav-hover cursor-pointer" id="select-category1">
+        <div onclick="location.href='products.html'">
+          <div class="fs15">BLU O COMPUTER GLASSES</div>
+          <div class="fs12">STARTING FROM RS 499</div>
+        </div>
+        <i class="material-icons">navigate_next</i>
+      </div>
+      <div class="nav-hover cursor-pointer" id="select-category2">
+        <div onclick="location.href='products.html'">
+          <div class="fs15">PREMIUM RANGE</div>
+          <div class="fs12">STARTING FROM RS 799</div>
+        </div>
+        <i class="material-icons">navigate_next</i>
+      </div>
+    </div>
+
+    <div id="drop-down-picks"></div>
+  </div>
+  <!-- =================================================================================== -->
+  <div id="drop-down3">
+    <div id="drop-down3-category">
+      <div id="drop-down3-title" class="nav-head">SELECT CATEGORY</div>
+      <div onclick="location.href='products.html'" id="drop-down3-content" class="cursor-pointer">
+        <div>Eyeglasses</div>
+        <div>Sunglasses</div>
+        <div>Blu 0 Computer Glasses</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="drop-down6">
+    <img src="https://static1.lenskart.com/media/desktop/img/HomeTryOnmenudropdown.png" alt="" />
+    <div id="drop-down6-content">
+      <div>GET YOUR EYES CHECKED AT HOME</div>
+      <div>
+        A certified refractionist will visit you with latest eye testing
+        machines & 100 trial frames
+      </div>
+      <div>Try these frames at your home completely free</div>
+      <div>BOOK APPOINTMENT</div>
+    </div>
+  </div>
+  <div id="drop-down7">
+    <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/banner_try_at_store.jpg" alt="" />
+    <div id="drop-down7-content">
+      <div>OVER 500 LENSKART STORE</div>
+      <div>
+        Experience eyewear in a whole new way: Visit your nearest store and
+        treat yourself to 5000+ eyewear styles in try at store block.
+      </div>
+      <div id="country">
+        <div>
+          <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_delhi.png" alt="" />
+          <div>Delhi</div>
+        </div>
+        <div>
+          <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_bangalore.png" alt="" />
+          <div>Bangalore</div>
+        </div>
+        <div>
+          <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_mumbai.png" alt="" />
+          <div>Mumbai</div>
+        </div>
+        <div>
+          <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_ahmedabad.png" alt="" />
+          <div>Ahmedabad</div>
+        </div>
+        <div>
+          <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_chennai.png" alt="" />
+          <div>Chennai</div>
+        </div>
+        <div>
+          <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/ic_hyderabad.png" alt="" />
+          <div>Hyderabad</div>
+        </div>
+        <div>
+          <img src="https://static5.lenskart.com/images/cust_mailer/24-Jan-App-Tiles/100cities.png" alt="" />
+          <div>+ 100 Cities</div>
+        </div>
+      </div>
+      <div>LOCATE A STORE</div>
+    </div>
+  </div>
+
+  <div id="drop-down5">
+    <div id="drop-down-gender">
+      <div class="nav-head cursor-pointer" id="gender-title">
+        SELECT GENDER
+      </div>
+      <div class="cursor-pointer nav-hover" id="drop-down-men">
+        <div>MEN</div>
+        <img alt="men" title="men" src="https://static.lenskart.com/media/desktop/img/ic_men.svg" width="35"
+          height="35" />
+        <i class="material-icons">navigate_next</i>
+      </div>
+      <div class="cursor-pointer nav-hover" id="drop-down-women">
+        <div>WOMEN</div>
+        <img alt="women" title="women" src="https://static.lenskart.com/media/desktop/img/ic_women.svg" width="35"
+          height="35" />
+        <i class="material-icons">navigate_next</i>
+      </div>
+      <div class="cursor-pointer nav-hover" id="drop-down-kids">
+        <div>KIDS</div>
+        <img alt="kids" title="kids" src="https://static.lenskart.com/media/desktop/img/ic_kids.svg" width="35"
+          height="35" />
+        <i class="material-icons">navigate_next</i>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div id="drop-down5-category">
+      <div id="select-category">SELECT CATEGORY</div>
+      <div class="nav-hover cursor-pointer" id="select-category1">
+        <div onclick="location.href='products.html'">
+          <div class="fs15">CLASSIC EYEGLASSES</div>
+          <div class="fs12">STARTING FROM RS 999</div>
+        </div>
+        <i class="material-icons">navigate_next</i>
+      </div>
+      <div class="nav-hover cursor-pointer" id="select-category2">
+        <div onclick="location.href='products.html'">
+          <div class="fs15">PREMIUM EYEGLASSES</div>
+          <div class="fs12">STARTING FROM RS 3500</div>
+        </div>
+        <i class="material-icons">navigate_next</i>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div id="drop-down-picks">
+      <div id="top-picks">
+        <div class="nav-title">OUR TOP PICKS</div>
+        <div onclick="location.href='products.html'">
+          <div>New Arrivals</div>
+          <div>Best Seller</div>
+          <div>Pilot Style</div>
+          <div>Power Sunglasses</div>
+          <div>Polarized Sunglasses</div>
+        </div>
+      </div>
+      <div id="frame-type">
+        <div class="nav-title">SHAPE</div>
+        <div onclick="location.href='products.html'">
+          <div>Aviator</div>
+          <div>Rounders</div>
+          <div>Wayfarer</div>
+          <div>Rectangle</div>
+          <div>Hexagon</div>
+          <div>Cat-Eye</div>
+          <div>Clubmaster</div>
+        </div>
+      </div>
+      <div id="collection">
+        <div class="nav-title">COLLECTION</div>
+        <div onclick="location.href='products.html'">
+          <div>Polarized</div>
+          <div>Summer Standouts</div>
+          <div>Power Sunglasses</div>
+          <div>Classic Sunglasses</div>
+          <div>Designer Collection</div>
+        </div>
+      </div>
+      <div id="brands">
+        <div class="nav-title">BRANDS</div>
+        <div onclick="location.href='products.html'">
+          <div>Ray-Ban</div>
+          <div>Vincent Chase</div>
+          <div>John Jacobs</div>
+          <div>Carrera</div>
+          <div>Oakley</div>
+          <div>Vogue</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="drop-down4">
+    <div id="drop-down4-brands">
+      <div class="drop-down4-title">BRANDS</div>
+      <div onclick="location.href='products.html'">
+        <div>Aqualens</div>
+        <div>Bousch Lomb</div>
+        <div>Johnson & Johnson</div>
+        <div>Softlens</div>
+        <div>Acuvue</div>
+        <div>Iconnect</div>
+        <div>Alcon</div>
+        <div>Air Optix</div>
+        <div>Pure Vision</div>
+      </div>
+    </div>
+    <div id="drop-down4-disposability">
+      <div class="drop-down4-title">EXPLORE BY DISPOSABILITY</div>
+      <div onclick="location.href='products.html'">
+        <div>Monthly</div>
+        <div>Day&Night</div>
+        <div>Daily</div>
+        <div>Yearly</div>
+        <div>Bi-weekly</div>
+      </div>
+    </div>
+    <div id="drop-down4-power">
+      <div class="drop-down4-title">EXPLORE BY POWER</div>
+      <div onclick="location.href='products.html'">
+        <div>Spherical - (CYL 0.5)</div>
+        <div>Spherical + (CYL 0.5)</div>
+        <div>Cylindrical Power (>0.75)</div>
+        <div>Toric Power</div>
+      </div>
+    </div>
+    <div id="drop-down4-colors">
+      <div class="drop-down4-title">EXPLORE BY COLORS</div>
+      <div onclick="location.href='products.html'">
+        <div>Green</div>
+        <div>Blue</div>
+        <div>Brown</div>
+        <div>Turquoise</div>
+        <div>View all colors</div>
+      </div>
+    </div>
+    <div id="drop-down4-solution">
+      <div class="drop-down4-title">SOLUTION</div>
+      <div id="small-large-solutions">
+        <div>
+          <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/cl_1.jpg" alt="" />
+          <div>Small</div>
+        </div>
+        <div>
+          <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/cl_2.jpg" alt="" />
+          <div>Large</div>
+        </div>
+      </div>
+      <div>
+        <img src="https://static5.lenskart.com/images/cust_mailer/New-Site-Images/cl_3.jpg" alt="" />
+        <div>View all solutions</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sign-in">
+    <div>
+      <img src="https://static.lenskart.com/media/wysiwyg/sign-register/sign-in-offer.jpg" alt="" />
+    </div>
+    <div>
+      <span onclick="closeOption()" class="sign-close">X</span>
+      <div id="sign-up-in">
+        <div onclick="signup()">Sign Up</div>
+        <div onclick="signin()">Sign In</div>
+      </div>
+      <input id="mobile-email" type="text" placeholder="Mobile / Email" />
+      <button>Proceed</button>
+      <div id="sign-in-whatsapp">
+        <input type="checkbox" />
+        <span>Get updates on Whatsapp</span>
+        <img src="https://static.lenskart.com/media/desktop/img/25-July-19/whatsapp.png" alt="" />
+      </div>
+      <span>*T&amp;C Apply</span>
+    </div>
+  </div>
+
+  <div id="sign-up">
+    <div>
+      <img src="https://static1.lenskart.com/media/desktop/img/sign-up.png" alt="" />
+    </div>
+    <div>
+      <span onclick="closeOption()" class="sign-close">X</span>
+      <div id="sign-up-in">
+        <div onclick="signup()">Sign Up</div>
+        <div onclick="signin()">Sign In</div>
+      </div>
+      <div id="sign-up-form">
+        <input id="fname" type="text" placeholder="First Name" />
+        <input id="lname" type="text" placeholder="Last Name" />
+        <input id="mobile" type="tel" placeholder="Mobile" />
+        <input id="email" type="email" placeholder="Email Address" />
+        <input id="password" type="password" placeholder="Password" />
+      </div>
+      <div id="sign-up-referral">
+        <input type="text" placeholder="Referral code" />
+        <span>(Optional)</span>
+      </div>
+      <button>Register</button>
+      <div id="sign-in-whatsapp">
+        <input type="checkbox" />
+        <span>Get updates on Whatsapp</span>
+        <img src="https://static.lenskart.com/media/desktop/img/25-July-19/whatsapp.png" alt="" />
+      </div>
+      <span>*T&amp;C Apply</span>
+    </div>
+  </div>
+  <div id="main-body">
+    <div class="whole_section">
+      <div id="image_block"></div>
+      <div class="description_block"></div>
+    </div>
+    <div class="bg_modal">
+      <div class="modal-content">
+        <div class="top_section">
+          <div>SHOPPING CART</div>
+          <i class="ion-close-round iconClose"></i>
+        </div>
+        <div class="middle_section">
+          <!-- <div class="eachDiv">
+            <div class="eachDivFirstSection">
+              <p>3 Months Gold Membership</p>
+              <div class="productTag">
+                <img
+                  src="https://static2.lenskart.com/media/catalog/product/cache/1/thumbnail/100x100/9df78eab33525d08d6e5fb8d27136e95//l/e/lenskart-gold-pro-membership_1.jpg" />
+                <p>Qty</p>
+                <input id="boxInput" type="number" value="1" />
+              </div>
+            </div>
+            <div class="eachDivSecondSection">
+              <p>PRODUCT PRICE</p>
+              <span>₹</span>
+              <p>99</p>
+            </div>
+            <div class="eachDivLastSection">
+              <p>=</p>
+              <i class="ion-close-round crossIcon2"></i>
+              <p>SUBTOTAL</p>
+              <p>99</p>
+            </div>
+            <div></div>
+          </div> -->
+        </div>
+        <div class="bottom_section">
+          <div class="total_price"></div>
+          <div class="button_checkout">PROCEED TO CHECKOUT</div>
+        </div>
+      </div>
+    </div>
+    <div class="icons-div">
+      <h4 class="text-center socialLK_followText">Follow Us</h4>
+      <div class="icons-div-section">
+        <div class="social">
+          <div class="space2"></div>
+          <a href="https://www.facebook.com/Lenskartindia">
+            <i class="ion-social-facebook icons"></i>
+          </a>
+          <a href="https://in.pinterest.com/lenskartindia/"><i class="ion-social-pinterest icons"></i></a>
+          <a href="https://twitter.com/Lenskart_com"><i class="ion-social-twitter icons"></i></a>
+          <a href="https://instagram.com/lenskart/"><i class="ion-social-instagram icons"></i></a>
+          <div class="space2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="small-section">
+      <span>
+        Download Lenskart App to buy
+        <a href="https://www.lenskart.com/mobile-app">Eyeglasses, Sunglasses and Contact Lenses.</a>
+      </span>
+    </div>
+    <div class="options">
+      <div>STORE LOCATOR</div>
+      <div>FAQ</div>
+      <div>ENTER MY POWER</div>
+      <div>BUYING GUIDE</div>
+      <div>FRAME SIZE</div>
+    </div>
+    <div class="options2nd">
+      <div>We are Hiring</div>
+      <div>Refer & Earn</div>
+      <div>About Us</div>
+      <div>T&C</div>
+      <div>Site Map</div>
+      <div>Disclaimer</div>
+      <div>Privacy</div>
+      <div>Lenskart Coupons</div>
+    </div>
+    <div class="options3nd">
+      <h5 id="no_margin">Eyeglasses</h5>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/marketing/all-eoss.html"><span>Free Frame</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/ray-ban-eyeglasses.html"><span>Ray-Ban</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/marketing/vc-air-bestseller-eyeglasses.html"><span>Vincent Chase</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/john-jacobs-eyeglasses.html"><span>John Jacobs</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/frame-style/full-rim.html"><span>Full Rim</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/vincent-chase-eyeglasses/half-rim.html"><span>Half Rim</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/marketing/vincent-chase-rimless.html"><span>Rim Less</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/vincent-chase-eyeglasses/cat-eye.html"><span>Cat Eye</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/try-at-home"><span>Eye Checkup</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses.html"><span>Eyeglasses</span></a>
+      </div>
+    </div>
+    <div class="options3nd">
+      <h5 id="no_margin">Sunglasses</h5>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/marketing/all-eoss.html"><span>Free Frame</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/ray-ban-eyeglasses.html"><span>Ray-Ban</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/marketing/vc-air-bestseller-eyeglasses.html"><span>Vincent Chase</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/john-jacobs-eyeglasses.html"><span>John Jacobs</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/frame-style/full-rim.html"><span>Full Rim</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/vincent-chase-eyeglasses/half-rim.html"><span>Half Rim</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/marketing/vincent-chase-rimless.html"><span>Rim Less</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/vincent-chase-eyeglasses/cat-eye.html"><span>Cat Eye</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/try-at-home"><span>Eye Checkup</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses.html"><span>Eyeglasses</span></a>
+      </div>
+    </div>
+    <div class="options3nd">
+      <h5 id="no_margin">Contact Lenses</h5>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/marketing/all-eoss.html"><span>Free Frame</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/ray-ban-eyeglasses.html"><span>Ray-Ban</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/marketing/vc-air-bestseller-eyeglasses.html"><span>Vincent Chase</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/john-jacobs-eyeglasses.html"><span>John Jacobs</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/frame-style/full-rim.html"><span>Full Rim</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/vincent-chase-eyeglasses/half-rim.html"><span>Half Rim</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/marketing/vincent-chase-rimless.html"><span>Rim Less</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses/brands/vincent-chase-eyeglasses/cat-eye.html"><span>Cat Eye</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/try-at-home"><span>Eye Checkup</span></a>
+      </div>
+      <div class="margin-left-right">
+        <a href="/eyeglasses.html"><span>Eyeglasses</span></a>
+      </div>
+    </div>
+    <div class="spacee"></div>
+  </div>
+</body>
+
+</html>
+<script src="./scripts/onepage.js"></script>
+<script src="./scripts/navbar.js"></script>
+<script src="./scripts/signup.js"></script>

@@ -1,0 +1,98 @@
+body {
+    font-family: sans-serif;
+}
+
+#head {
+    background-color: #363636;
+    padding: 3px 0;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: -8px;
+    margin-left: -10px;
+    padding-left: 200px;
+    height: 45px;
+}
+
+#head>img {
+    width: 175px;
+}
+
+#addressContainer {
+    width: 37%;
+    height: 700px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#shipping-title {
+    background-color: #329c92;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 10px 8px;
+}
+
+#addressContainer button {
+    background-color: #f18132;
+    color: white;
+    height: 45px;
+    width: 25%;
+    float: right;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#address-form {
+    clear: both;
+    width: 80%;
+}
+
+#address-form input,
+#address-form select {
+    border: 1px solid #c9c9c9;
+    box-shadow: inset 0 2px 5px rgb(0 0 0 / 6%);
+    padding: 5px;
+    width: 95%;
+    display: block;
+    outline: none;
+    color: #555;
+}
+
+#address-form label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    font-family: futurastd-book;
+}
+
+#address-form input:nth-of-type(7) {
+    box-shadow: none;
+    border: none;
+    display: inline;
+    width: 20px;
+}
+
+#comments {
+    width: 13px;
+    height: 13px;
+}
+
+#add-part-2 input:nth-of-type(2),
+#add-part-2 input:nth-of-type(3) {
+    box-shadow: none;
+    border: none;
+    display: inline;
+    width: 20px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+#add1 {
+    height: 40px;
+}
