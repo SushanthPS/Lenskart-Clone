@@ -13,10 +13,10 @@ This is a lenskart website clone made using HTML, CSS and JS.
 
 
 **Webpages** 💂‍♂️
-1) Homepage
+1) Homepage (Landing Page)
 2) Products Page
 3) Single Product Page
-4) Checkout Page
+4) Address Page
 5) Payments Page
 6) Thank you Page
 
