@@ -34,13 +34,13 @@ This is a lenskart website clone made using HTML, CSS and JS.
 <br>
 
 **Steps to run Website Locally** ☀️
-1) Open GitBash in the location you want to clone
-2) Copy-Paste the command "git clone https://github.com/sushanthps2/Lenskart-Clone.git" on the terminal
-3) Open 'Homepage.html' after cloning is done
+1) Open GitBash in the location you want to clone and store the files
+2) Copy-Paste the command "git clone https://github.com/sushanthps2/Lenskart-Clone.git" on the terminal and run it
+3) Open 'Homepage.html' which is the landing page after cloning is done
 
 <br>
 
-**Images of Website** 🥰
+**Images of the Website** 🥰
 
 ![Lenskart1](https://user-images.githubusercontent.com/35593841/129454824-fb2e0fde-5e59-497f-bacb-d1203499a38f.png)
 ![Lenskar2](https://user-images.githubusercontent.com/35593841/129454835-2ac1b633-e22c-4e53-a1ef-85cbf7a273b6.png)
