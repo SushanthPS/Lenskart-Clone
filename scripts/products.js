@@ -345,6 +345,13 @@ if (localStorage.getItem("glass_img") == null)
 
 let productWindow = document.querySelector(".product-window");
 
+async function getApi() {
+  let res = await fetch("http://localhost:2345/row");
+  let data = await res.json();
+  console.log(data);
+}
+getApi();
+
 function showProducts(e) {
   let glasses = e;
   let index = 0;
