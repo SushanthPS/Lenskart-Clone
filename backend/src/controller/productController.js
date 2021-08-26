@@ -14,7 +14,7 @@ router.get("", async (req, res) => {
   try {
     const product = await Product.find().lean().exec();
     let data = [];
-    for (let i = 12; i < product.length; i++) {
+    for (let i = 0; i < product.length; i++) {
       data.push(product[i]);
     }
     return res.send(data);
