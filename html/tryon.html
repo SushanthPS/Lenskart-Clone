@@ -20,6 +20,14 @@
 </head>
 
 <body>
+  <div id="user-logged-dropdown">
+    <div>My Orders</div>
+    <div>My Prescription</div>
+    <div>My Store Credit</div>
+    <div>My Dittos</div>
+    <div>Account Information</div>
+    <div onclick="logout()">Logout</div>
+  </div>
   <div id="final-navbar">
     <div id="nav-bar-middle">
       <div>
@@ -458,7 +466,7 @@
           <div onclick="signin()">Sign In</div>
         </div>
         <input id="mobile-email" type="text" placeholder="Mobile / Email" />
-        <button onclick="login()">Proceed</button>
+        <button onclick="login(event)">Proceed</button>
         <div id="sign-in-whatsapp">
           <input type="checkbox" />
           <span>Get updates on Whatsapp</span>
@@ -489,7 +497,7 @@
           <input type="text" placeholder="Referral code" />
           <span>(Optional)</span>
         </div>
-        <button onclick="register()">Register</button>
+        <button onclick="register(event)">Register</button>
         <div id="sign-in-whatsapp">
           <input type="checkbox" />
           <span>Get updates on Whatsapp</span>

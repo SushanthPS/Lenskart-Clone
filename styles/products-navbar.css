@@ -133,6 +133,31 @@ body {
   margin-left: 7%;
 }
 
+#user-logged-dropdown {
+  z-index: 9999;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  width: 160px;
+  margin-left: 70%;
+  margin-top: 37px;
+  height: 240px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+  background-color: white;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+#user-logged-dropdown>div {
+  padding: 8px;
+}
+
+#user-logged-dropdown>div:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+
 
 #nav-bar-middle-right-box>div:nth-of-type(3) {
   display: flex;

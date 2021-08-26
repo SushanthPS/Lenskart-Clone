@@ -122,14 +122,50 @@ function toTitleCase(str) {
 
 let sign = document.getElementById("user-name");
 let loggedUser = document.getElementById("user-logged");
+let logged_dropdown = document.getElementById("user-logged-dropdown")
+
 
 let user = JSON.parse(localStorage.getItem("loggedUser"));
-
+let fname;
 if (user != null) {
     sign.style.display = "none";
     loggedUser.style.display = "flex";
-    let name = toTitleCase(user.first_name);
-    loggedUser.innerHTML = `${name} <span class="material-icons">
+    fname = toTitleCase(user.first_name);
+    loggedUser.innerHTML = `${fname} <span class="material-icons">
     arrow_drop_down
     </span>`;
+}
+
+
+loggedUser.onmouseover = function () {
+    logged_dropdown.style.display = "flex";
+    loggedUser.innerHTML = `${fname} <span class="material-icons">
+    arrow_drop_up
+    </span>`;
+}
+loggedUser.onmouseout = function () {
+    logged_dropdown.style.display = "none";
+    loggedUser.innerHTML = `${fname} <span class="material-icons">
+    arrow_drop_down
+    </span>`;
+}
+
+logged_dropdown.onmouseover = function () {
+    logged_dropdown.style.display = "flex";
+    loggedUser.innerHTML = `${fname} <span class="material-icons">
+    arrow_drop_up
+    </span>`;
+}
+
+logged_dropdown.onmouseout = function () {
+    logged_dropdown.style.display = "none";
+    loggedUser.innerHTML = `${fname} <span class="material-icons">
+    arrow_drop_down
+    </span>`;
+}
+
+
+function logout() {
+    localStorage.setItem("loggedUser", null);
+    window.location.href = "homepage.html"
 }
