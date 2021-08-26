@@ -39,6 +39,10 @@ async function register(e) {
 
     if (res.status == 400)
         alert("Please fill in all the fields")
+    else {
+        alert("Registration Sucessfull")
+        window.location.href = "homepage.html"
+    }
 
 }
 
