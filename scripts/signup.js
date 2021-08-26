@@ -46,11 +46,23 @@ async function register(e) {
 
 }
 
+
+
+
 async function login(e) {
     e.preventDefault();
+    // let passInput = document.getElementById("signin-pass");
+    // if (passInput.style.display == "block") {
+    //     if (passInput.value == user.password) {
+    //         alert("Login Successful");
+    //         window.location.href = "homepage.html"
+    //     } else {
+    //         alert("Either username or password is incorrect.")
+    //     }
+    // }
     let input = document.getElementById("mobile-email").value;
     if (input == "")
-        alert("Please fill in all the fields");
+        alert("Please enter a valid Email or Mobile Number.");
     else {
         let res = await fetch("http://localhost:2345/signup");
         let data = await res.json();
@@ -58,10 +70,11 @@ async function login(e) {
         data.forEach((el) => {
             if (input == el.email || input == el.mobile) {
                 user = el;
+                // passInput.style.display = "block";
             }
         })
         if (user == undefined)
-            alert("Email/Mobile not found");
+            alert("Account doesn't exist. Use different phone number or email.");
         else {
             localStorage.setItem("loggedUser", JSON.stringify(user));
             alert("Login Successful")
