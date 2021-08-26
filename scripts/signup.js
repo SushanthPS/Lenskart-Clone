@@ -40,7 +40,7 @@ async function register(e) {
     if (res.status == 400)
         alert("Please fill in all the fields")
     else {
-        alert("Registration Sucessfull")
+        alert("Registration Successful")
         window.location.href = "homepage.html"
     }
 
@@ -63,7 +63,8 @@ async function login(e) {
         if (user == undefined)
             alert("Email/Mobile not found");
         else {
-            alert("Login Sucessfull")
+            localStorage.setItem("loggedUser", JSON.stringify(user));
+            alert("Login Successful")
             window.location.href = "homepage.html"
         }
     }

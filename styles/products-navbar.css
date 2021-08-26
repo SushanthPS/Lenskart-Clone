@@ -110,44 +110,54 @@ body {
   display: flex;
   align-items: center;
   font-size: 0.75vw;
-  justify-content: flex-end;
-  padding-right: 80px;
+  margin-right: 60px;
 }
 
 #user-name {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   width: 25%;
   height: 100%;
   align-items: center;
   margin-left: 7%;
 }
 
-#nav-bar-middle-right-box>div:nth-of-type(2) {
-  display: flex;
+#user-logged {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
   width: 25%;
   height: 100%;
   align-items: center;
-  justify-content: flex-end;
   margin-left: 7%;
 }
+
 
 #nav-bar-middle-right-box>div:nth-of-type(3) {
   display: flex;
   width: 25%;
-  align-items: center;
-  justify-content: flex-end;
   height: 100%;
+  align-items: center;
+  justify-content: center;
   margin-left: 7%;
 }
 
 #nav-bar-middle-right-box>div:nth-of-type(4) {
   display: flex;
   width: 25%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-left: 7%;
+}
+
+#nav-bar-middle-right-box>div:nth-of-type(5) {
+  display: flex;
+  width: 25%;
   height: 100%;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin-left: 7%;
 }
 

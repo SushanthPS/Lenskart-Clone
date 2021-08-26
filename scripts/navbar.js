@@ -109,3 +109,27 @@ dropdown4.onmouseover = function () {
 dropdown4.onmouseout = function () {
     dropdown4.style.display = "none";
 }
+
+
+function toTitleCase(str) {
+    let arr = str.split("");
+    arr[0] = arr[0].toUpperCase();
+    return arr.join("");
+}
+
+
+
+
+let sign = document.getElementById("user-name");
+let loggedUser = document.getElementById("user-logged");
+
+let user = JSON.parse(localStorage.getItem("loggedUser"));
+
+if (user != null) {
+    sign.style.display = "none";
+    loggedUser.style.display = "flex";
+    let name = toTitleCase(user.first_name);
+    loggedUser.innerHTML = `${name} <span class="material-icons">
+    arrow_drop_down
+    </span>`;
+}
