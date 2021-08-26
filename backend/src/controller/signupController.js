@@ -19,7 +19,7 @@ router.post("/", async (req, res) => {
         const x = await Signup.create(req.body);
         res.send(x);
     } catch (err) {
-        res.status(400).send("helllooo");
+        res.status(400).send(err.message);
     }
 })
 
