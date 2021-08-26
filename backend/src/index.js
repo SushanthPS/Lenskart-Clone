@@ -5,6 +5,7 @@ const connect = require("./config/db");
 
 const productController = require("./controller/productController");
 const rowController = require("./controller/rowController");
+const signupController = require("./controller/signupController");
 
 
 const app = express();
@@ -14,6 +15,7 @@ app.use(cors());
 
 app.use("/product", productController);
 app.use("/row", rowController);
+app.use("/signup", signupController);
 
 
 const PORT = 2345;

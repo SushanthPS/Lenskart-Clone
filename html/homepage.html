@@ -450,7 +450,7 @@
           <div onclick="signin()">Sign In</div>
         </div>
         <input id="mobile-email" type="text" placeholder="Mobile / Email" />
-        <button onclick="login()">Proceed</button>
+        <button onclick="login(event)">Proceed</button>
         <div id="sign-in-whatsapp">
           <input type="checkbox" />
           <span>Get updates on Whatsapp</span>
@@ -471,17 +471,17 @@
           <div onclick="signin()">Sign In</div>
         </div>
         <div id="sign-up-form">
-          <input id="fname" type="text" placeholder="First Name" />
-          <input id="lname" type="text" placeholder="Last Name" />
-          <input id="mobile" type="tel" placeholder="Mobile" />
-          <input id="email" type="email" placeholder="Email Address" />
-          <input id="password" type="password" placeholder="Password" />
+          <input id="fname" type="text" placeholder="First Name" required />
+          <input id="lname" type="text" placeholder="Last Name" required />
+          <input id="mobile" type="tel" placeholder="Mobile" required />
+          <input id="email" type="email" placeholder="Email Address" required />
+          <input id="password" type="password" placeholder="Password" required />
         </div>
         <div id="sign-up-referral">
           <input type="text" placeholder="Referral code" />
           <span>(Optional)</span>
         </div>
-        <button onclick="register()">Register</button>
+        <button onclick="register(event)">Register</button>
         <div id="sign-in-whatsapp">
           <input type="checkbox" />
           <span>Get updates on Whatsapp</span>

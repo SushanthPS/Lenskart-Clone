@@ -17,78 +17,50 @@ function closeOption() {
     signIn.style.display = "none";
 }
 
-function register() {
-    var fname = document.getElementById("fname").value
-    var lname = document.getElementById("lname").value
-    var email = document.getElementById("email").value
-    var mobile = document.getElementById("mobile").value
-    var password = document.getElementById("password").value
-    var temp = false
-    if (fname == "") {
-        alert("First name is empty")
-    } else if (lname == "") {
-        alert("Last name is empty")
-    } else if (email == "") {
-        alert("Email is empty")
-    } else if (mobile == "") {
-        alert("Mobile No is empty")
-    } else if (password == "") {
-        alert("Password is empty")
-    } else {
+async function register(e) {
+    e.preventDefault();
 
-        function user(f, l, e, m, p) {
-            this.first_Name = f,
-                this.last_name = l,
-                this.Email = e,
-                this.Mobile = m,
-                this.Password = p
-        }
-        var users = new user(fname, lname, email, mobile, password)
-        var usersarr = localStorage.getItem("lenuser")
-        if (usersarr == null) {
-            usersarr = []
-        } else {
-            usersarr = JSON.parse(localStorage.getItem("lenuser"))
-        }
-
-        for (let i = 0; i < usersarr.length; i++) {
-            if (usersarr[i].Email == email || usersarr[i].Mobile == mobile) {
-                temp = true
-            }
-        }
-        if (temp == true) {
-            alert("Email already exists")
-        } else {
-            usersarr.push(users)
-            alert("Signup Successful")
-            window.location.href = "homepage.html"
-        }
-
-        // usersarr.push(users)
-        localStorage.setItem("lenuser", JSON.stringify(usersarr))
-
+    let formData = {
+        first_name: document.getElementById("fname").value,
+        last_name: document.getElementById("lname").value,
+        mobile: document.getElementById("mobile").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value
     }
+    let body = JSON.stringify(formData);
+
+    let res = await fetch("http://localhost:2345/signup", {
+        method: "POST",
+        body: body,
+        headers: {
+            "Content-Type": "application/json"
+        }
+    });
+
+    if (res.status == 400)
+        alert("Please fill in all the fields")
+
 }
 
-function login() {
-    usersarr = JSON.parse(localStorage.getItem("lenuser"))
-    var email = document.getElementById("mobile-email").value
-
-    var res = false
-    if (email == "") {
-        alert("Email is empty")
-    } else {
-        usersarr.forEach(function (el) {
-            if (email == el.Email || email == el.Mobile) {
-                res = true
+async function login(e) {
+    e.preventDefault();
+    let input = document.getElementById("mobile-email").value;
+    if (input == "")
+        alert("Please fill in all the fields");
+    else {
+        let res = await fetch("http://localhost:2345/signup");
+        let data = await res.json();
+        let user;
+        data.forEach((el) => {
+            if (input == el.email || input == el.mobile) {
+                user = el;
             }
         })
-        if (res == true) {
-            alert("Login Successful")
-            window.location.href = "products.html"
-        } else {
-            alert("Invalid Credentials")
+        if (user == undefined)
+            alert("Email/Mobile not found");
+        else {
+            alert("Login Sucessfull")
+            window.location.href = "homepage.html"
         }
     }
-
 }
