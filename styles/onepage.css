@@ -1,5 +1,6 @@
 body {
   width: 100%;
+  max-height: 300%;
   font-family: "Lato", "Ariel", sans-serif;
 }
 
@@ -83,8 +84,9 @@ body {
 
 .bg_modal {
   width: 100%;
-  height: 300vh;
+  height: 370em;
   top: 0;
+  cursor: pointer;
   position: absolute;
   display: none;
   overflow: hidden;
@@ -317,4 +319,9 @@ a:hover {
 
 .spacee {
   margin-top: 50px;
+}
+
+.crossIcon2 {
+  float: right;
+  margin-right: 20px;
 }
