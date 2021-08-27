@@ -55,16 +55,14 @@ async function register(e) {
 
 
 
-
-
 async function login(e) {
     e.preventDefault();
 
     let input = document.getElementById("mobile-email").value;
     let passInput = document.getElementById("signin-pass").value;
 
-    if (input == "")
-        alert("Please enter a valid Email or Mobile Number.");
+    if (input == "" || passInput == "")
+        alert("Please fill in all the fields");
     else {
         let user;
         let res = await fetch("http://localhost:2345/signup");
@@ -76,7 +74,7 @@ async function login(e) {
             }
         })
         if (user == undefined || user == null)
-            alert("Please enter a valid Email or Mobile Number.");
+            alert("Please enter a valid Email or Mobile Number and a Password");
         else {
             localStorage.setItem("loggedUser", JSON.stringify(user));
             alert("Login Successful")

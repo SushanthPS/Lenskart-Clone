@@ -113,4 +113,6 @@ function clickeds2() {
   scroll = wrapper[1].scrollLeft + 50;
 }
 
-console.clear()
+setTimeout(function () {
+  console.clear();
+}, 1000)
