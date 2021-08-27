@@ -62,40 +62,55 @@ function showdescrip() {
   let divBuyButton = document.createElement("div");
   divBuyButton.setAttribute("class", "divBuyButton");
   divBuyButton.innerHTML = "BUY NOW";
-  divBuyButton.addEventListener("click", function () {
-    cart = localStorage.getItem("cartObj");
-    let isExist = false;
-    if (cart == null) {
-      cart = [];
-      cart.push(data);
-      isExist = true;
-    } else {
-      cart = JSON.parse(localStorage.getItem("cartObj"));
+  divBuyButton.addEventListener("click", async function () {
+    let formData = {
+      i: data.i,
+      img: data.img,
+      brand: data.brand,
+      rating: data.rating,
+      star: data.star,
+      priceImg: data.priceImg,
+      link: data.link,
+      frameType: data.frameType,
+      frameShape: data.frameShape,
+      frameColor: data.frameColor,
+      price: data.price,
+      sample: data.sample,
+      size: data.size,
+      qty: data.qty,
+      _id: data._id,
+    };
 
-      for (let i = 0; i < cart.length; i++) {
-        if (cart[i].img == data.img) {
-          isExist = true;
-          cart[i].qty++;
-          break;
-        }
+    let res = await fetch("http://localhost:2345/cart");
+    cart = await res.json();
+    for (let i = 0; i < cart.length; i++) {
+      if (cart[i]._id == formData._id) {
+        formData.qty = cart[i].qty;
+        formData.qty++;
+        res = await fetch(`http://localhost:2345/cart/${formData._id}`, {
+          method: "DELETE",
+        });
       }
     }
-    if (!isExist) {
-      cart.push(data);
-    }
 
-    localStorage.setItem("cartObj", JSON.stringify(cart));
+    let body = JSON.stringify(formData);
+    res = await fetch("http://localhost:2345/cart", {
+      method: "POST",
+      body: body,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    res = await fetch("http://localhost:2345/cart");
+    cart = await res.json();
+
     cart.map((el, i) => {
       buy(el, i);
     });
   });
 
   function buy(el, j) {
-    let dummyImg = document.createElement("img");
-    dummyImg.src = el.img;
-    dummyImg.setAttribute("id", `${j}`);
-    dummyImg.style.display = "none";
-
     let modalBuy = document.querySelector(".bg_modal");
     modalBuy.style.display = "flex";
     let middle_section = document.querySelector(".middle_section");
@@ -133,8 +148,6 @@ function showdescrip() {
 
     let eachDivLastSection = document.createElement("div");
     eachDivLastSection.setAttribute("class", "eachDivLastSection");
-    let equalSign = document.createElement("i");
-    equalSign.setAttribute("class", "ion-refreshing");
     let crossSign = document.createElement("i");
     crossSign.setAttribute("class", `ion-close-round ${j} crossIcon2`);
 
@@ -147,35 +160,66 @@ function showdescrip() {
 
     let totalPrice = document.querySelector(".total_price");
 
-    equalSign.addEventListener("click", function () {
+    boxInput.onchange = async () => {
+      let res = await fetch("http://localhost:2345/cart");
+      cart = await res.json();
+      for (let i = 0; i < cart.length; i++) {
+        if (cart[i]._id == el._id) {
+          el.qty = boxInput.value;
+          res = await fetch(`http://localhost:2345/cart/${el._id}`, {
+            method: "DELETE",
+          });
+        }
+      }
+
+      let body = JSON.stringify(el);
+      res = await fetch("http://localhost:2345/cart", {
+        method: "POST",
+        body: body,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      res = await fetch("http://localhost:2345/cart");
+      cart = await res.json();
+
       productPriceParaAgain.textContent = `${
         Number(el.price) * Number(boxInput.value)
       }`;
-      el.qty = boxInput.value;
-      localStorage.setItem("cartObj", JSON.stringify(cart));
       let totalMoney = cart.reduce((acc, el) => {
         return acc + Number(el.qty) * Number(el.price);
       }, 0);
       totalPrice.innerHTML = `Order Total: ${totalMoney}`;
-    });
+    };
 
     let totalMoney = cart.reduce((acc, el) => {
       return acc + Number(el.qty) * Number(el.price);
     }, 0);
     totalPrice.innerHTML = `Order Total: ${totalMoney}`;
 
-    eachDivLastSection.append(
-      equalSign,
-      crossSign,
-      subtotalPara,
-      productPriceParaAgain
-    );
+    crossSign.onclick = async () => {
+      let res = await fetch(`http://localhost:2345/cart/${el._id}`, {
+        method: "DELETE",
+      });
+      res = await fetch("http://localhost:2345/cart");
+      cart = await res.json();
+      if (cart.length == 0) {
+        totalPrice.innerHTML = `Order Total: 0`;
+      }
+      middle_section.innerHTML = "";
+      cart.map((el, i) => {
+        buy(el, i);
+      });
+    };
+
+    eachDivLastSection.append(crossSign, subtotalPara, productPriceParaAgain);
 
     eachDiv.append(
       eachDivFirstSection,
       eachDivSecondSection,
-      eachDivLastSection,
-      dummyImg
+      eachDivLastSection
+      // dummyImg
     );
     middle_section.append(eachDiv);
     let button_checkout = document.querySelector(".button_checkout");
@@ -222,11 +266,3 @@ iconCross.addEventListener("click", function () {
   let middle_section = document.querySelector(".middle_section");
   middle_section.innerHTML = "";
 });
-
-let totalPrice = document.querySelector(".total_price");
-let cart = JSON.parse(localStorage.getItem("cartObj"));
-let totalMoney = cart.reduce((acc, el) => {
-  return acc + Number(el.qty) * Number(el.price);
-}, 0);
-
-totalPrice.innerHTML = `Order Total: ${totalMoney}`;
