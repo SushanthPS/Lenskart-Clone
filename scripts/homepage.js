@@ -1,5 +1,3 @@
-console.clear()
-
 var i = 0;
 
 var arr_imgs = [
@@ -114,3 +112,5 @@ function clickeds2() {
   });
   scroll = wrapper[1].scrollLeft + 50;
 }
+
+console.clear()

@@ -800,7 +800,9 @@ body {
   text-underline-offset: 4px;
 }
 
-#mobile-email {
+
+#mobile-email,
+#signin-pass {
   border: none;
   border-bottom: 1px solid #b3b3b3;
   margin-top: 30px;
@@ -809,9 +811,13 @@ body {
   padding-bottom: 10px;
 }
 
-#mobile-email:focus {
+
+
+#mobile-email:focus,
+#signin-pass:focus {
   outline: none;
 }
+
 
 #sign-up-in~button {
   margin-top: 30px;
