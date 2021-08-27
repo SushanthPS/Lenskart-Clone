@@ -1,20 +1,27 @@
 let signUp = document.getElementById("sign-up");
 let signIn = document.getElementById("sign-in");
 var elements = document.getElementsByTagName("*");
+var body = document.getElementById("nav-body");
 
 function signup() {
     signUp.style.display = "flex";
     signIn.style.display = "none";
+    body.style.opacity = "0.9";
+    body.style.filter = "brightness(50%)"
 }
 
 function signin() {
     signUp.style.display = "none";
     signIn.style.display = "flex";
+    body.style.opacity = "0.9";
+    body.style.filter = "brightness(50%)"
 }
 
 function closeOption() {
     signUp.style.display = "none";
     signIn.style.display = "none";
+    body.style.opacity = "1";
+    body.style.filter = "brightness(100%)"
 }
 
 async function register(e) {
