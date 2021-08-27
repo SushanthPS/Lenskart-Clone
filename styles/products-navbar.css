@@ -214,6 +214,7 @@ body {
   padding-left: 20px;
   height: 70%;
   padding-top: 15px;
+  white-space: nowrap;
 }
 
 #left-text div:hover {
@@ -228,6 +229,7 @@ body {
 
 #right-images {
   margin-left: 360px;
+  margin-right: 40px;
 }
 
 #right-images img {
