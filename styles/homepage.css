@@ -401,11 +401,11 @@ li {
 
 .box {
   background-color: #FAFAFA;
-  height: 180px;
+  height: 100%;
   width: 100%;
   border-radius: 10px;
   padding: 15px;
-  margin-left: -40px;
+  margin-left: -35px;
 }
 
 .dropbox {
@@ -416,7 +416,7 @@ li {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   height: auto;
-  margin-left: -43px;
+  margin-left: -40px;
   margin-top: 7px;
   border-radius: 0px !important;
 }
