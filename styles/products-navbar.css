@@ -7,25 +7,17 @@ body {
 }
 
 .fs12 {
-  font-size: 12px;
+  font-size: 0.7vw;
 }
 
 .fs15 {
-  font-size: 15px;
+  font-size: 0.8vw;
 }
 
 .nav-hover:hover {
   background-color: #e6e7e9;
 }
 
-.nav-head {
-  color: #3e3e3f;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 16px;
-  display: block;
-  text-decoration: none;
-}
 
 .line {
   background: #adadae;
@@ -145,7 +137,7 @@ body {
   box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   background-color: white;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 0.85vw;
 }
 
 #user-logged-dropdown>div {
@@ -285,16 +277,23 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 97.7%;
+  width: 89%;
   margin-top: -40px;
 }
 
 #drop-down-men>img {
-  margin-left: 30px;
+  margin-left: 40px;
+  width: 20%;
+}
+
+#drop-down-women>img {
+  margin-left: 20px;
+  width: 20%;
 }
 
 #drop-down-kids>img {
-  margin-left: 25px;
+  margin-left: 35px;
+  width: 20%;
 }
 
 #drop-down-women {
@@ -302,7 +301,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 97.7%;
+  width: 89%;
 }
 
 #drop-down-kids {
@@ -310,7 +309,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 97.7%;
+  width: 89%;
 }
 
 #select-category {
@@ -319,6 +318,7 @@ body {
   margin-top: -75px;
   height: 40px !important;
   padding-right: 30px !important;
+  font-size: 0.8vw;
 }
 
 #select-category1 {
@@ -398,6 +398,7 @@ body {
   padding-left: 15px;
   padding-top: 20px;
   padding-bottom: 10px;
+  font-size: 0.8vw;
 }
 
 .nav-title~div {
@@ -407,8 +408,8 @@ body {
 
 .nav-title~div div {
   cursor: pointer;
-  font-size: 15px;
   padding-bottom: 5px;
+  font-size: 0.8vw;
 }
 
 .nav-title~div div:hover {
@@ -476,20 +477,18 @@ body {
 }
 
 #drop-down3-title {
-  font-size: 14px;
-  font-weight: 700;
   color: #333;
-  margin-bottom: 20px;
+  margin-top: -25px;
 }
 
 #drop-down3-content div {
   line-height: 22px;
   color: #333;
-  font-size: 14px;
+  font-size: 0.7vw;
 }
 
 #drop-down3-content div:hover {
-  font-size: 15px;
+  font-size: 0.75vw;
 }
 
 #drop-down6 {
@@ -699,13 +698,13 @@ body {
 
 .drop-down4-title {
   color: #3e3e3f;
-  font-weight: 800;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 0.9vw;
   margin-bottom: 20px;
 }
 
 .drop-down4-title~div {
-  font-size: 15px;
+  font-size: 0.8vw;
 }
 
 .drop-down4-title~div div:hover {
