@@ -258,11 +258,3 @@ function showdescrip() {
   );
 }
 showdescrip();
-
-// let iconCross = document.querySelector(".iconClose");
-// iconCross.addEventListener("click", function () {
-//   let modalBuy = document.querySelector(".bg_modal");
-//   modalBuy.style.display = "none";
-//   let middle_section = document.querySelector(".middle_section");
-//   middle_section.innerHTML = "";
-// });
