@@ -52,11 +52,11 @@
 
 **Images of the Website** 🥰
 
-![Lenskart1](https://user-images.githubusercontent.com/35593841/129454824-fb2e0fde-5e59-497f-bacb-d1203499a38f.png)
-![Lenskar2](https://user-images.githubusercontent.com/35593841/129454835-2ac1b633-e22c-4e53-a1ef-85cbf7a273b6.png)
-![Lenskart3](https://user-images.githubusercontent.com/35593841/129454837-62c670a1-e8af-455f-a3a4-77bbf7efdf3b.png)
+![Lenskart1](https://user-images.githubusercontent.com/35593841/131252831-fc681eef-1099-407a-af35-6647c84bdb52.png)
+![Lenskart2](https://user-images.githubusercontent.com/35593841/131252840-afc6b1ce-2160-4f8b-bf94-09be017de2b4.png)
+![Lenskart4](https://user-images.githubusercontent.com/35593841/131252881-37a40a08-95fd-4870-8f54-10b04c642f0d.png)
 ![Lenskart4](https://user-images.githubusercontent.com/35593841/129454839-e396ff61-54fd-477e-a21b-d2bba2be96df.png)
-![Lenskart5](https://user-images.githubusercontent.com/35593841/129454840-7dd7af26-1fc4-4be2-9cdb-b00ba755ba01.png)
+![Lenskart3](https://user-images.githubusercontent.com/35593841/131252897-cfac0311-1af8-4cc4-8c49-b5cc745554c0.png)
 ![Lenskart6](https://user-images.githubusercontent.com/35593841/129454841-63d6f68c-981c-44de-858b-9356c9a73082.png)
 ![Lenskart7](https://user-images.githubusercontent.com/35593841/129454842-d0cf9c05-889a-4e61-90b6-f82fa9600da4.png)
 
