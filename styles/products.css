@@ -1,0 +1,226 @@
+body {
+  font-family: "Rajdhani", sans-serif;
+}
+#main-body_direction {
+  display: flex;
+  justify-content: space-between;
+}
+
+.whole-window {
+  width: 95%;
+  margin: 1.5%;
+  display: flex;
+}
+
+.sorting-window {
+  flex-basis: 20%;
+  padding-right: 10px;
+}
+
+.product-window {
+  /* padding-left: 1%; */
+  /* border-top: 1px solid black; */
+  border-left: 1px solid #ededed;
+  margin-left: 10px;
+}
+#product-window-top {
+  padding: 13px 10px;
+  display: flex;
+  align-items: center;
+  background-color: #ededed;
+  font-size: 18px;
+  color: #319288;
+}
+#toggle_section {
+  display: flex;
+  align-items: center;
+}
+.switch {
+  display: inline-block;
+  width: 85px;
+  height: 28px;
+  position: relative;
+  /* background-color: rebeccapurple; */
+  margin: 0px 10px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #329c92;
+  border-radius: 34px;
+}
+.switch input:checked + .slider {
+  background-color: #329c92;
+}
+
+.switch input:checked + .slider::before {
+  transform: translate(55px);
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 0px;
+  bottom: -1px;
+  background-color: white;
+  border-radius: 30px;
+}
+#product-window-top-filter-section {
+  display: flex;
+  align-items: center;
+}
+#product-window-top-filter-section-filter {
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 30px;
+  width: 200px;
+  height: 30px;
+}
+
+#product-window-top-showing {
+  text-align: center;
+  /* background-color: yellow; */
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+.productRow {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 2%;
+  margin-bottom: 2%;
+}
+
+.productRow > div {
+  overflow: hidden;
+  height: 46.3vh;
+  text-decoration: none;
+  transition: box-shadow 0.3s;
+  color: black;
+  padding: 2%;
+}
+
+.icon {
+  display: block;
+  font-size: 150%;
+  text-align: right;
+}
+
+.eachProd > img {
+  width: 100%;
+}
+
+.eachProd p {
+  margin-bottom: 5px;
+}
+
+.eachProd:hover {
+  box-shadow: 0 0 5px 5px #e4e0e0;
+}
+
+.divSpecification {
+  overflow: hidden;
+  margin-top: 20px;
+  transition: margin-top 0.3s;
+}
+
+.divSpecification:hover {
+  margin-top: 0px;
+}
+
+.divSize {
+  color: white;
+}
+
+.divRating {
+  display: inline-block;
+  padding: 0px 5px;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(40, 199, 191);
+}
+
+.priceButton {
+  display: flex;
+  margin: 2% 0px;
+  margin-bottom: 1%;
+}
+
+.priceButton > p {
+  margin: 0px;
+}
+
+.priceButton > button {
+  flex-basis: 30%;
+  background-color: white;
+  border-color: rgb(224, 220, 220);
+}
+
+.priceButton > img {
+  width: 10%;
+}
+
+.space {
+  flex: 1;
+}
+
+.sorting-window {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 2%;
+}
+
+.grid > div {
+  border: 1px solid #e6e6e6;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+
+.grid > div:hover {
+  border: 1px solid #1cbbb4;
+}
+
+.grid p {
+  font-size: 13px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.frameColor {
+  list-style: none;
+  padding: 0%;
+}
+
+.frameColor > li {
+  width: 100%;
+  height: 25px;
+}
+
+.frameColor > li input {
+  margin-right: 10px;
+}
+
+.frameType {
+  margin-bottom: 40px;
+}
+
+.frameShape {
+  margin-bottom: 80px;
+}
