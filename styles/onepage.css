@@ -1,0 +1,193 @@
+body {
+  width: 100%;
+  font-family: "Lato", "Ariel", sans-serif;
+}
+
+.whole_section {
+  width: 95%;
+  padding: 1%;
+  margin: 1.5%;
+  display: flex;
+}
+
+#image_block {
+  flex-basis: 70%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#image_block>div {
+  flex-basis: 45%;
+  margin-bottom: 1.5%;
+  margin-right: 4.5%;
+}
+
+.description_block {
+  flex: 1;
+  padding-left: 10px;
+}
+
+#image_block>div img {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.5s;
+  border: 1px solid rgba(219, 218, 218, 0.933);
+}
+
+#image_block>div img:hover {
+  transform: scale(0.95);
+}
+
+.divHeadingIcon {
+  display: flex;
+  margin: 0px;
+}
+
+.divHeadingIcon>h5 {
+  flex: 1;
+  margin: 0px;
+  color: #00bac6;
+  letter-spacing: 1px;
+}
+
+.divHeadingIcon>i {
+  font-size: 180%;
+  margin: 0px;
+}
+
+.pSize {
+  color: #00bac6;
+}
+
+.divBuyButton {
+  background-color: #00bac6;
+  color: white;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  padding: 10px 0px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.divTryOn {
+  border: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 0px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+
+.icons-div {
+  text-align: center;
+}
+
+.icons-div>h4 {
+  margin-right: 0px;
+  margin-bottom: 10px;
+}
+
+.icons-div-section {
+  width: 15%;
+  margin: 0px auto;
+}
+
+.icons {
+  font-size: 1.33333333em;
+  margin: 0px 5px;
+}
+
+.icons:hover {
+  border-bottom: none;
+}
+
+.social {
+  display: flex;
+  text-align: center;
+}
+
+.space2 {
+  flex: 1;
+}
+
+.small-section {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(32, 134, 124);
+}
+
+a:hover {
+  color: rgb(32, 82, 77);
+  border-bottom: 1px solid rgb(29, 31, 31);
+}
+
+.social a {
+  flex-basis: 25%;
+  border-bottom: none;
+  color: black;
+}
+
+.options {
+  display: flex;
+  border-top: 1px solid rgb(197, 194, 194);
+  border-bottom: 1px solid rgb(197, 194, 194);
+}
+
+.options>div {
+  flex: 1;
+  margin: 0.7% 0px;
+  text-align: center;
+}
+
+.options2nd {
+  display: flex;
+  margin: 2% 9%;
+}
+
+.options2nd>div {
+  flex: 1;
+  text-align: center;
+}
+
+.options3nd {
+  display: flex;
+  margin: 0px 7%;
+}
+
+#no_margin {
+  margin: 0px;
+}
+
+.margin-left-right {
+  padding: 0px 10px;
+  color: #755a85;
+  font-size: 13px;
+  border-right: 1px solid rgb(221, 212, 215);
+}
+
+.margin-left-right>a:hover {
+  border-bottom: none;
+  color: #755a85;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(32, 134, 124);
+}
+
+a:hover {
+  color: rgb(32, 82, 77);
+  border-bottom: 1px solid rgb(29, 31, 31);
+}
+
+.spacee {
+  margin-top: 50px;
+}
