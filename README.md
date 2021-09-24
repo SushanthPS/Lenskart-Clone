@@ -1,7 +1,7 @@
 # Lenskart Clone :smile:
 
 #### This is a lenskart website clone made using 
-1) HTML, CSS and JS for the frontend 
+1) HTML, CSS and JavaScript for the frontend 
 2) Node and MongoDB for the backend
 3) Express, Cors, and Mongoose NPM packages
 
@@ -20,7 +20,7 @@
 **Webpages** 💂‍♂️
 1) Homepage (Landing Page)
 2) Products Page
-3) Single Product Page
+3) Single Product Page (Dyanmic Page)
 4) TryOn Page
 5) Address Page
 6) Payments Page
@@ -34,8 +34,7 @@
 3) Dynamic products page
 4) Cart Modal Window
 5) Sign-in/Sign-up functionality
-6) Promises for payment
-7) Online MongoDB database for all registered users
+6) Online MongoDB database for all registered users
 
 <br>
 
@@ -43,9 +42,9 @@
 ```
 1) Open GitBash in the location you want to clone and store the files
 2) Copy-Paste the command "git clone https://github.com/sushanthps2/Lenskart-Clone.git" on the terminal and run it
-3) Install all the required packages with "npm install" 
-4) Run index.js present in the backend folder with the command "node index.js"
-5) Open Homepage.html (Landing Page)
+3) Goto the backend directory in your git terminal and install all the required packages with "npm install" 
+4) Run the backend server with the command "npm run server" in the backend folder.
+5) Open Homepage.html with a live server (Landing Page)
 ```
 
 <br>
