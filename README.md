@@ -42,8 +42,8 @@
 ```
 1) Open GitBash in the location you want to clone and store the files
 2) Copy-Paste the command "git clone https://github.com/sushanthps2/Lenskart-Clone.git" on the terminal and run it
-3) Goto the backend directory in your git terminal and install all the required packages with "**npm install**" 
-4) Run the backend server with the command "**npm run server**" in the backend folder.
+3) Goto the backend directory in your git terminal and install all the required packages with **npm install**
+4) Run the backend server with the command **npm run server** in the backend folder.
 5) Open Homepage.html with a live server (Landing Page)
 ```
 
